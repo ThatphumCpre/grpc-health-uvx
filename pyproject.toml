@@ -1,0 +1,18 @@
+[project]
+name = "grpc-healthcheck"
+version = "0.1.0"
+description = "A simple gRPC health check tool"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "grpcio>=1.60.0",
+    "grpcio-health-checking>=1.60.0",
+]
+
+[project.scripts]
+grpc-healthcheck = "grpc_healthcheck:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
